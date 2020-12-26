@@ -3,6 +3,7 @@ const request = require("request");
 const app = (() => {
 
     const _containerStatuses = document.querySelector('.container__statuses');
+    const _loader = document.querySelector('.loader');
     const _refreshButton = document.querySelector('.container__buttons__refresh');
 
     fetchGithubStatus();
@@ -15,12 +16,21 @@ const app = (() => {
     function clearStatusesContainer() {
         _containerStatuses.textContent = '';
     }
+
+    function showLoader() {
+        _loader.classList.remove('hidden');
+    }
+
+    function hideLoader() {
+        _loader.classList.add('hidden');
+    }
     
     function fetchGithubStatus() {
+        showLoader();
         request('https://www.githubstatus.com/', {json: true}, (err, res, body) => {
-            console.log(body);
             if ( body.components) {
                 renderStatusesContainer(body.components);
+                hideLoader();
             }
         })
     }
