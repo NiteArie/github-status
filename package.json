@@ -1,0 +1,34 @@
+{
+  "name": "github-status",
+  "version": "1.0.0",
+  "description": "Web apps acquire data in many ways. Through user input in web pages, through API's to backend systems, from files and databases, and sometimes by \"scraping\" websites. The objective of the GitHub Status app is to introduce you to one way to scrape information from another web site.",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiteArie/github-status.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiteArie/github-status/issues"
+  },
+  "homepage": "https://github.com/NiteArie/github-status#readme",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "request": "^2.88.2",
+    "stream-http": "^3.1.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "json-loader": "^0.5.7",
+    "net": "^1.0.2",
+    "tls": "0.0.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.3.0"
+  }
+}
