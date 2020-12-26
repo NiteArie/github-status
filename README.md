@@ -11,7 +11,7 @@ Although this application specification relies heavily on Javascript, feel free 
 ## User Stories
 
 * [X] User can see the current status for GitHub Git operations, API Requests, Operational Issues, PRs, Dashboard, & Projects, Operational Notifications, Operational Gists, and Operational GitHub Pages as a list in the main app window.
-* [ ] User can retrieve the most recent status from the GitHub Status web site by clicking a 'Get Status' button.
+* [X] User can retrieve the most recent status from the GitHub Status web site by clicking a 'Get Status' button.
 
 ## Bonus Features
 
