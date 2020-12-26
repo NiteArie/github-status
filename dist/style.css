@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.container__title {
+    font-size: 36px;
+    text-align: center;
+    margin: 20px;
+    color: hsla(230, 50%, 50%);
+}
+
+.container__statuses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container__statuses__status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    padding: 20px;
+    border: 1px solid hsl(210, 50%, 90%);
+}
+
+.container__statuses__status:nth-child(4) {
+    display: none;
+}
+
+.container__statuses__status__name {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.container__statuses__status__desc {
+    line-height: 1.25;
+    color: hsl(210, 10%, 50%);
+}
+
+.container__statuses__status__state {
+    text-align: right;
+    color: hsl(130, 50%, 50%);
+}
