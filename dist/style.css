@@ -51,3 +51,23 @@ body {
     text-align: right;
     color: hsl(130, 50%, 50%);
 }
+
+.container__buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container__buttons__refresh {
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: white;
+    color: hsl(220, 50%, 50%);
+    border: 2px solid hsl(210, 10%, 80%);
+    cursor: pointer;
+}
+
+.container__buttons__refresh:focus {
+    outline: none;
+    border: 2px solid hsl(230, 50%, 50%);
+}

@@ -3,8 +3,18 @@ const request = require("request");
 const app = (() => {
 
     const _containerStatuses = document.querySelector('.container__statuses');
+    const _refreshButton = document.querySelector('.container__buttons__refresh');
 
     fetchGithubStatus();
+
+    _refreshButton.addEventListener('click', (event) => {
+        clearStatusesContainer();
+        fetchGithubStatus();
+    })
+
+    function clearStatusesContainer() {
+        _containerStatuses.textContent = '';
+    }
     
     function fetchGithubStatus() {
         request('https://www.githubstatus.com/', {json: true}, (err, res, body) => {
